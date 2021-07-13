@@ -1,4 +1,19 @@
 <h1>magazine works!</h1>
 <div class="container-card">
-    <app-card [author]="item.authors[0].name" [imageURL]="item.image_url" [score]="item.score || 0" [title]="item.title" *ngFor="let item of magazine"></app-card>
+    <h3 style="margin-left: 20px; border-bottom: 2px solid red;">Section 1</h3>
+    <div class="container-card__app-card">
+        <app-card [author]="item.authors[0].name" [imageURL]="item.image_url" [score]="item.score || 0" [title]="item.title" *ngFor="let item of magazineSec1"></app-card>
+    </div>
+</div>
+<div class="container-card">
+    <h3 style="margin-left: 20px; border-bottom: 2px solid red;">Section 2</h3>
+    <div class="container-card__app-card">
+        <app-card [author]="item.authors[0].name" [imageURL]="item.image_url" [score]="item.score || 0" [title]="item.title" *ngFor="let item of magazineSec2"></app-card>
+    </div>
+</div>
+<div class="container-card">
+    <h3 style="margin-left: 20px; border-bottom: 2px solid red;">Section 3</h3>
+    <div class="container-card__app-card">
+        <app-card [author]="item.authors[0].name" [imageURL]="item.image_url" [score]="item.score || 0" [title]="item.title" *ngFor="let item of magazineSec3"></app-card>
+    </div>
 </div>

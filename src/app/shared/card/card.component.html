@@ -6,7 +6,17 @@
         <img src="{{imageURL}}" alt="{{title}}">
     </div>
     <div class="container-card__score">
-        <p>{{score}}</p>
+        <circle-progress
+            [percent]="50"
+            [radius]="16"
+            [outerStrokeWidth]="4"
+            [innerStrokeWidth]="0"
+            [outerStrokeColor]="'#78C000'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="300"
+            style="margin-top: 5px"
+            ></circle-progress>
     </div>
     <div class="container-card__author">
         <p>Author: <span>{{author}}</span></p>

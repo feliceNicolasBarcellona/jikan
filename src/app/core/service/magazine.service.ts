@@ -11,8 +11,8 @@ export class MagazineService {
 
   constructor(private http: HttpClient) { }
 
-  getMagazine(query: string, magazine_id: number){
-    return this.http.get<MagazineInterface>(`${this.end_point}/${query}/${magazine_id}`);
+  getMagazine(query: string, magazine_id: number, page: number){
+    return this.http.get<MagazineInterface>(`${this.end_point}/${query}/${magazine_id}/${page}`);
   }
 
 
