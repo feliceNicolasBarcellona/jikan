@@ -1,0 +1,24 @@
+.container-card
+    display: flex
+    justify-content: space-between
+    overflow-x: scroll
+    overflow-y: hidden
+    transition: height .5s linear
+    min-height: 400px
+    max-width: 1400px
+
+/*SCROLLBAR*/
+::-webkit-scrollbar
+    height: 10px
+    width: 100px
+::-webkit-scrollbar-track 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+    -webkit-border-radius: 10px
+    border-radius: 10px
+::-webkit-scrollbar-thumb 
+    -webkit-border-radius: 10px
+    border-radius: 10px
+    background: litegray
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5)
+::-webkit-scrollbar-thumb:window-inactive 
+    background: rgba(255,0,0,0.4)

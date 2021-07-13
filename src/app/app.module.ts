@@ -8,6 +8,7 @@ import { HomepageComponent } from './feature/homepage/homepage.component';
 import { SearchBarComponent } from './shared/search-bar/search-bar.component';
 import { MagazineComponent } from './feature/magazine/magazine.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
+import { CardComponent } from './shared/card/card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NavbarComponent } from './core/navbar/navbar.component';
     HomepageComponent,
     SearchBarComponent,
     MagazineComponent,
-    NavbarComponent
+    NavbarComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
