@@ -10,6 +10,8 @@ import { MagazineComponent } from './feature/magazine/magazine.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { CardComponent } from './shared/card/card.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { FormsModule } from '@angular/forms';
+import { SearchDetailsComponent } from './feature/search-details/search-details.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     SearchBarComponent,
     MagazineComponent,
     NavbarComponent,
-    CardComponent
+    CardComponent,
+    SearchDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
       "showBackground": false,
       "clockwise": false,
       "lazy": false}),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

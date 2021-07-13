@@ -1,1 +1,4 @@
 <app-search-bar></app-search-bar>
+<div class="container-cardSearch" style="display: flex; flex-wrap: wrap;">
+    <app-card style="margin-bottom: 50px;" [title]="item.title" [imageURL]="item.video_url" [author]="item.title_japanese" *ngFor="let item of homeAnime"></app-card>
+</div>

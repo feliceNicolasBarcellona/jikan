@@ -2,10 +2,10 @@
     <h2>Welcome.</h2>
     <h5>Millions of movies and magazine to discover. Explore now.</h5>
     <div class="container-searchBar__form">
-        <form action="">
+        <form #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
             <div class="container-searchBar__form__input">
-                <input type="text" placeholder="Search movies or magazine...">
-                <button type="submit">Search</button>
+                <input type="text" placeholder="Search movies or magazine..." name="search" id="search" ngModel>
+                <button type="submit" routerLink="/jikan/{{type}}">Search</button>
             </div>
         </form>
     </div>
